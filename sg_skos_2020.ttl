@@ -3,7 +3,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix : <https:/example.org/dnb-sg/> .
 
-:HK000 rdf:a skos:Concept ;
+:HK000 a skos:Concept ;
     skos:notation "000" ;
 	skos:prefLabel "Allgemeines, Informatik, Informationswissenschaft"@de ;
 	skos:prefLabel "Generalities, computers, information"@en ;
