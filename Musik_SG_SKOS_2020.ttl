@@ -8,8 +8,8 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 
 : a skos:ConceptScheme ;
-	dct:title "DDC-Subject groups beginning with bibliographic year 2004 for the Series M and T of the Deutsche Nationalbibliografie"@en ;
-	dct:title "DDC-Sachgruppen ab Bibliografie-Jahrgang 2004 für die Reihen M und T der Deutschen Nationalbibliografie"@de ;
+	dct:title "DDC-Subject groups beginning with bibliographic year 2020 for the Series M and T of the Deutsche Nationalbibliografie"@en ;
+	dct:title "DDC-Sachgruppen ab Bibliografie-Jahrgang 2020 für die Reihen M und T der Deutschen Nationalbibliografie"@de ;
 	skos:hasTopConcept :HK780 , :HK781 , :HK782 , :HK783 , :HK784 , :HK785 , :HK786 , :HK787 , :HK788 ;
 	dct:publisher <http://d-nb.info/gnd/10140798-1> ;
 	dct:issued "2020-01-01"^^xsd:date .
