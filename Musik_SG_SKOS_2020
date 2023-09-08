@@ -1,24 +1,32 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ddc: <http://dewey.info/> .
-@prefix Musik_SG_Skos: <file:/U:/LinkedOpenData:/Musik_SG_Skos.txt#> .
+@prefix : <https://example.org/Musik_SG_Skos/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/>.
+
+: a skos:ConceptScheme ;
+	dct:title "DDC-Subject groups beginning with bibliographic year 2004 for the Series M and T of the Deutsche Nationalbibliografie"@en ;
+	dct:title "DDC-Sachgruppen ab Bibliografie-Jahrgang 2004 für die Reihen M und T der Deutschen Nationalbibliografie"@de ;
+	skos:hasTopConcept :HK780 , :HK781 , :HK782 , :HK783 , :HK784 , :HK785 , :HK786 , :HK787 , :HK788 ;
+	dct:publisher <http://d-nb.info/gnd/10140798-1> ;
+	dct:issued "2020-01-01"^^xsd:date .
 
 :HK780 a skos:Concept ;
 	skos:notation "780" ;
 	skos:prefLabel "Musik allgemein"@de ;
 	skos:prefLabel "Music"@en ;
-	skos:narrower :SG780_2 , SG780_7 , SG 780_9 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:narrower :SG780_2 , :SG780_7 , :SG780_9 ;
+	skos:inScheme : .
 
 :HK781 a skos:Concept ;
 	skos:notation "781" ;
 	skos:prefLabel "Musik nach Gattungen"@de ;
 	skos:prefLabel "Musical forms"@en ;
-	skos:narrower :SG781_54 , :SG781:542 , :SG781_556 , :SG781_62 , :SG781_64 , :SG781_65 ; :SG781_642 ; :SG781_643 ; :SG781_646 ; :SG781_648 ; :SG781_649 ; :SG781_66 ; :SG781_68 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:narrower :SG781_54 , :SG781:542 , :SG781_556 , :SG781_62 , :SG781_64 , :SG781_65 , :SG781_642 , :SG781_643 , :SG781_646 , :SG781_648 , :SG781_649 , :SG781_66 , :SG781_68 ;
+	skos:inScheme : .
 
 :HK782 a skos:Concept ;
 	skos:notation "782" ;
@@ -26,368 +34,368 @@
 	skos:prefLabel "Vocal music"@en ;
 	skos:narrower :SG782_1 , :SG782_22 , :SG782_25 , :SG782_4 ,
 		:SG782_5 , :SG782_6 , :SG782_7 , :SG782_8 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :HK783 a skos:Concept ;
 	skos:notation "783" ;
 	skos:prefLabel "Vokalmusik für Einzelstimmen"@de ;
 	skos:prefLabel "Vocal music for single voices"@en ;
 	skos:narrower :SG783_1 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :HK784 a skos:Concept ;
 	skos:notation "784" ;
 	skos:prefLabel "Orchestermusik"@de ;
 	skos:prefLabel "Orchestral music"@en ;
 	skos:narrower :SG784_2 , :SG784_23 , :SG784_9 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :HK785 a skos:Concept ;
 	skos:notation "785" ;
 	skos:prefLabel "Kammermusik"@de ;
 	skos:prefLabel "Chamber music"@en ;
 	skos:narrower :SG785_12 , :SG785_13 , :SG785_14 , :SG784_15 ;
-	skos inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :HK786 a skos:Concept ;
 	skos:notation "786" ;
 	skos:prefLabel "Tasten- und Schlaginstrumente, mechanische und elektronische Instrumente"@de ;
 	skos:prefLabel "Keyboard, percussion, mechanical, electrophonic instruments"@en ;
 	skos:narrower :SG786_2 , :SG786_4 , :SG786_5 , :SG786_6 , :SG786_7 , :SG786_8 ;
-	skos inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :HK787 a skos:Concept ;
 	skos:notation "787" ;
 	skos:prefLabel "Streich- und Zupfinstrumente"@de ;
 	skos:prefLabel "Bowed stringed and plectral instrument"@en ;
 	skos:narrower :SG787_2 , :SG787_3 , :SG787_4 , :SG787_5 , :SG787_6 , :SG787_8 , :SG787_83 ,:SG787_84 ,:SG787_87 , :SG787_9 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 	
 :HK788 a skos:Concept ;
 	skos:notation "788" ;
 	skos:prefLabel "Blasinstrumente"@de ;
 	skos:prefLabel "Wind instruments"@en ;
 	skos:narrower :SG788_3 , :SG788_32 , :SG788_36 , :SG788_4 , :SG788_52 , :SG788_58 , :SG788_62 , :SG788_7 , :SG788_8 , :SG788_92 , :SG788_93 , :SG788_94 , :SG_788_96 , :SG788_97 , :SG788_98 , :SG788_99 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 	
 :SG780_2 a skos:Concept ;
 	skos:notation "780.2" ;
 	skos:prefLabel "Texte zu Musik"@de ;
     skos:prefLabel "Miscellaneous texts"@en ;
 	skos:broader :HK780 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG780_7 a skos:Concept ;
 	skos:notation "780.7" ;
 	skos:prefLabel "Unterrichtswerke"@de ;
 	skos:prefLabel "Teaching materials" ;
 	skos:broader :HK780 ;
-    skos:inScheme :DNB_Sachgruppen_Musik .
+    skos:inScheme : .
 
 :SG780_9 a skos:Concept ;
     skos:notation "780.9" ;
 	skos:prefLabel "Sammlungen und Sammelwerke aus verschiedenen Bereichen, Großausgaben"@de ;
 	skos:prefLabel "Miscellaneous collections"@en ;
 	skos:broader :HK780 ;
-    skos:inScheme :DNB_Sachgruppen_Musik .
+    skos:inScheme : .
 
 :SG781_54 a skos:Concept ;
     skos:notation "781.54" ;
 	skos:prefLabel "Background Music"@de ;
 	skos:prefLabel "Background music"@en ;
 	skos:broader :HK781 ;
-    skos:inScheme :DNB_Sachgruppen_Musik .
+    skos:inScheme : .
 
 :SG781_542 a skos:Concept ;
     skos:notation "781.542" ;
 	skos:prefLabel "Filmmusik"@de ;
 	skos:prefLabel "Film music"@en ;
 	skos:broader :HK781 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG781_556 a skos:Concept ;
     skos:notation "781.556" ;
 	skos:prefLabel "Ballettmusik"@de ;
 	skos:prefLabel "Ballet music"@en ;
 	skos:broader :HK781 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG781_62 a skos:Concept ;
     skos:notation "781.62" ;
 	skos:prefLabel "Volksmusik"@de ;
 	skos:prefLabel "Folk music"@en ;
 	skos:broader :HK781 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG781_64 rdf:type skos:concept ;
 	skos:notation "781.64" ;
 	skos:prefLabel "Unterhaltungs-, Pop- und Rockmusik"@de ;
 	skos:prefLabel "Popular music, pop and rock music"@en ;
 	skos:broader :HK781 ;
-    skos:inScheme :DNB_Sachgruppen_Musik .
+    skos:inScheme : .
 
 :SG781_642 rdf:type skos:concept ;
 	skos:notation "781.642" ;
 	skos:prefLabel "Countrymusik"@de ;
 	skos:broader :HK781 ;
-    skos:inScheme :DNB_Sachgruppen_Musik .
+    skos:inScheme : .
 
 :SG781_643 rdf:type skos:concept ;
 	skos:notation "781.643" ;
 	skos:prefLabel "Blues und Soul"@de ;
 	skos:broader :HK781 ;
-    skos:inScheme :DNB_Sachgruppen_Musik .
+    skos:inScheme : .
 
 :SG781_646 rdf:type skos:concept ;
 	skos:notation "781.646" ;
 	skos:prefLabel "Reggae"@de ;
 	skos:broader :HK781 ;
-    skos:inScheme :DNB_Sachgruppen_Musik .
+    skos:inScheme : .
 
 :SG781_648 rdf:type skos:concept ;
 	skos:notation "781.648" ;
 	skos:prefLabel "Electronica"@de ;
 	skos:broader :HK781 ;
-    skos:inScheme :DNB_Sachgruppen_Musik .
+    skos:inScheme : .
 
 :SG781_649 rdf:type skos:concept ;
 	skos:notation "781.649" ;
 	skos:prefLabel "Rap"@de ;
 	skos:broader :HK781 ;
-    skos:inScheme :DNB_Sachgruppen_Musik .
+    skos:inScheme : .
 
 :SG781_65 rdf:type skos:concept ;
     skos:notation "781.65" ;
 	skos:prefLabel "Jazz"@de ;
 	skos:prefLabel "Jazz"@en ;
 	skos:broader :HK781 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG781_66 rdf:type skos:concept ;
     skos:notation "781.65" ;
 	skos:prefLabel "Rockmusik"@de ;
 	skos:broader :HK781 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG781_65 rdf:type skos:concept ;
     skos:notation "781.65" ;
 	skos:prefLabel "Klassische Musik"@de ;
 	skos:broader :HK781 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG782_1 a skos:Concept ;
     skos:notation "782.1" ;
 	skos:prefLabel "Musikalische Bühnenwerke"@de ;
 	skos:preflabel "Dramatic vocal forms"@en ;
 	skos:broader :HK782 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG782_22 rdf:type skos:concept ;
 	skos:notation "782.22" ;
 	skos:prefLabel "Geistliche Vokalmusik"@de ;
 	skos:prefLabel "Sacred vocal forms"@en ;
 	skos:broader :HK782 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG782_25 rdf:type skos:concept ;
     skos:notation "782.25" ;
 	skos:prefLabel "Geistliche Lieder"@de ;
 	skos:prefLabel "Sared songs"@en ;
 	skos:broader :HK782 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG782_4 a skos:Concept ;
     skos:notation "782.4" ;
 	skos:prefLabel "Weltliche Vokalmusik"@de ;
 	skos:prefLabel "Secular vokal music"@en ;
 	skos:broader :HK782 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG782_5 a skos:Concept ;
     skos:notation "782.5" ;
 	skos:prefLabel "Chormusik für gemischte Stimmen"@de ;
 	skos:prefLabel "Choral music for mixed voices"@en ;
 	skos:broader :HK782 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG782_6 a skos:Concept ;
     skos:notation "782.6" ;
 	skos:prefLabel "Chormusik für Frauenstimmen"@de ;
 	skos:prefLabel "Choral music womens voices"@en ;
 	skos:broader :HK782 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG782_7 a skos:Concept ;
     skos:notation "782.7" ;
 	skos:prefLabel "Chormusik für Kinder- und Jugendstimmen"@de ;
 	skos:prefLabel "Choral music childrens and youth voices"@en ;
 	skos:broader :HK782 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG782_8 a skos:Concept ;
     skos:notation "782.8" ;
 	skos:prefLabel "Chormusik für Männerstimmen"@de ;
 	skos:prefLabel "Choral music mens voices"@en ;
 	skos:broader :HK782 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG783_1 a skos:Concept ;
     skos:notation "783.1" ;
 	skos:prefLabel "Lieder"@de ;
 	skos:prefLabel "Songs"@en ;
 	skos:broader :HK783 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG784_2 a skos:Concept ;
     skos:notation "784.2" ;
 	skos:prefLabel "Musik für Orchester"@de ;
 	skos:prefLabel "Music for orchestra"@en ;
 	skos:broader :HK784 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG784_23 a skos:Concept ;
-    skos:notation "784.23"
+    skos:notation "784.23" ;
 	skos:prefLabel "Konzerte für Soloinstrument(e) und Orchester"@de ;
 	skos:prefLabel "Concertos for solo instruments and orchestra"@en ;
 	skos:broader :HK784 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG784_9 a skos:Concept ;
-    skos:notation "784.9 ;
+    skos:notation "784.9" ;
 	skos:prefLabel "Blasorchester"@de ;
 	skos:prefLabel "Wind band"@en ;
 	skos:broader :HK784 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG785_12 a skos:Concept ;
     skos:notation "785.12" ;
 	skos:prefLabel "Duos"@de ;
 	skos:prefLabel "Duets"@en ;
 	skos:broader :HK785 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG785_13 a skos:Concept ;
     skos:notation "785.13" ;
 	skos:prefLabel "Trios"@de ;
 	skos:prefLabel "Trios"@en ;
 	skos:broader :HK785 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG785_14 a skos:Concept ;
     skos:notation "785.14" ;
 	skos:prefLabel "Quartette"@de ;
 	skos:prefLabel "Quartets"@en ;
 	skos:broader :HK785 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG785_15 a skos:Concept ;
     skos:notation "785.15" ;
 	skos:prefLabel "Quintette und mehr"@de ;
 	skos:prefLabel "Quintets and larger ensembles"@en ;
 	skos:broader :HK785 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG786_2 a skos:Concept ;
     skos:notation "786.2" ;
 	skos:prefLabel "Klavier"@de ;
 	skos:prefLabel "Piano"@en ;
 	skos:broader :HK786 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG786_4 a skos:Concept ;
     skos:notation "786.4" ;
 	skos:prefLabel "Cembalo"@de ;
 	skos:prefLabel "Harpsichord"@en ;
 	skos:broader :HK786 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG786_5 a skos:Concept ;
     skos:notation "786.5" ;
 	skos:prefLabel "Orgel"@de ;
 	skos:prefLabel "Organ"@en ;
 	skos:broader :HK786 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG786_6 a skos:Concept ;
     skos:notation "786.6" ;
 	skos:prefLabel "Mechanische Instrumente"@de ;
 	skos:prefLabel "Mechanical instruments"@en ;
 	skos:broader :HK786 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG786_7 a skos:Concept ;
     skos:notation "786.7" ;
 	skos:prefLabel "Elektronische Instrumente"@de ;
 	skos:prefLabel "Electronic instruments"@en ;
 	skos:broader :HK786 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG786_8 a skos:Concept ;
     skos:notation "786.8" ;
 	skos:prefLabel "Schlaginstrumente"@de ;
 	skos:prefLabel "Percussion instruments"@en ;
 	skos:broader :HK786 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG787_2 a skos:Concept ;
     skos:notation "787.2" ;
 	skos:prefLabel "Violine"@de ;
 	skos:prefLabel "Violin"@en ;
 	skos:broader :HK787 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG787_3 a skos:Concept ;
     skos:notation "787.3" ;
 	skos:prefLabel "Viola"@de ;
 	skos:prefLabel "Viola"@en ;
 	skos:broader :HK787 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG787_4 rdf:type skos:concept ;
     skos:notation "787.4" ;
 	skos:prefLabel "Violoncello"@de ;
 	skos:prefLabel "Cello"@en ;
 	skos:broader :HK787 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG787_5 a skos:Concept ;
     skos:notation "787.5" ;
     skos:prefLabel "Kontrabass"@de ;
 	skos:prefLabel "Double bass"@en ;
 	skos:broader :HK787 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG787_6 a skos:Concept ;
     skos:notation "787.6" ;
 	skos:prefLabel "Andere Streichinstrumente"@de ;
 	skos:prefLabel "Other bowed stringed instruments"@en ;
 	skos:broader :HK787 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG787_8 a skos:Concept ;
     skos:notation "787.8" ;
 	skos:prefLabel "Zupfinstrumente"@de ;
 	skos:prefLabel "Plectral instruments"@en ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG787_83 a skos:Concept ;
     skos:notation "787.83" ;
 	skos:prefLabel "Laute"@de ;
 	skos:broader :HK787 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG787_87 a skos:Concept ;
     skos:notation "787.87" ;
 	skos:prefLabel "Gitarre"@de ;
 	skos:broader :HK787 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG787_84 a skos:Concept ;
     skos:notation "787.84" ;
 	skos:prefLabel "Mandoline"@de ;
 	skos:broader :HK787 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG787_9 rdf:type skos:concept ;
     skos:notation "787.9" ;
@@ -401,112 +409,103 @@
 	skos:prefLabel "Flöten"@de ;
 	skos:prefLabel "Flutes"@en ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_32 a skos:Concept ;
     skos:notation "788.32" ;
 	skos:prefLabel "Querflöte"@de ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_36 a skos:Concept ;
     skos:notation "788.36" ;
 	skos:prefLabel "Blockflöte"@de ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_4 a skos:Concept ;
     skos:notation "788.4" ;
 	skos:prefLabel "Rohrblattinstrumente"@de ;
 	skos:prefLabel "Reed instruments"@en ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_52 a skos:Concept ;
     skos:notation "788.52" ;
 	skos:prefLabel "Oboe"@de ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_58 a skos:Concept ;
     skos:notation "788.58" ;
 	skos:prefLabel "Fagott"@de ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_62 a skos:Concept ;
     skos:notation "788.62" ;
 	skos:prefLabel "Klarinette"@de ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_7 a skos:Concept ;
     skos:notation "788.7" ;
 	skos:prefLabel "Saxophon"@de ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_8 a skos:Concept ;
     skos:notation "788.8" ;
 	skos:prefLabel "Akkordeon, Mundharmonika"@de ;
 	skos:prefLabel "Accordion, mouth organ"@en ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_92 a skos:Concept ;
     skos:notation "788.92" ;
 	skos:prefLabel "Trompete"@de ;
 	skos:prefLabel "Trumpet"@en ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_93 a skos:Concept ;
     skos:notation "788.93" ;
 	skos:prefLabel "Posaune"@de ;
 	skos:prefLabel "Trombone"@en ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_94 a skos:Concept ;
     skos:notation "788.94" ;
 	skos:prefLabel "Horn"@de ;
 	skos:prefLabel "Horn"@en;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_96 a skos:Concept ;
     skos:notation "788.96" ;
     skos:prefLabel "Kornett"@de ;
 	skos:prefLabel "Cornet"@en ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_97 a skos:Concept ;
     skos:notation "788.97" ;
     skos:prefLabel "Flügelhorn"@de ;
 	skos:prefLabel "Flugelhorn"@en ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_98 a skos:Concept ;
     skos:notation "788.98" ;
     skos:prefLabel "Tuba"@de ;
 	skos:prefLabel "Tuba"@en ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
+	skos:inScheme : .
 
 :SG788_99 a skos:Concept ;
     skos:notation "788.99" ;
     skos:prefLabel "Andere Blechinstrumente"@de ;
 	skos:prefLabel "Other brass instruments"@en ;
 	skos:broader :HK788 ;
-	skos:inScheme :DNB_Sachgruppen_Musik .
-
-:DNB_Sachgruppen_Musik a skos:ConceptScheme ;
-	dct:title """DDC-Subject groups beginning with bibliographic year 2004 for the
-		Series M and T of the Deutsche Nationalbibliografie"""@en ;
-	dct:title """DDC-Sachgruppen ab Bibliografie-Jahrgang 2004 für die Reihen M und T 
-		der Deutschen Nationalbibliografie"""@de ;
-	skos:hasTopConcept :HK780 , :HK781 , :HK782 , :HK783 , :HK784 , :HK785 , :HK786 , :HK787 , :HK788 ;
-	dct:publisher <http://d-nb.info/gnd/10140798-1> ;
-	dct:issued "2020-01-01"^^xsd:date .
+	skos:inScheme : .
